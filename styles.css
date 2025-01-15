@@ -5,17 +5,17 @@ body{
     color: #0a0a23;
     font-family: sans-serif;
 }
-span[class~="sr-only"]{
-    border:0;
-    clip-path: inset(50%);
-    clip:rect(1px, 1px, 1px, 1px);
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    white-space: nowrap;
-    position: absolute;
-    padding: 0;
-    margin: -1px;
+span[class~="sr-only"] {
+    border: 0 !important; 
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
 }
 h1{
     max-width: 37.25rem;
@@ -32,4 +32,43 @@ h1 .flex span:first-of-type{
 }
 h1 .flex span:last-of-type{
     font-size: 1.2em;
+}
+section{
+    max-width: 40rem;
+    margin: 0 auto;
+    border:2px solid #d0d0d5;
+}
+#years{
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    background-color: #0a0a23;
+    color: #fff;
+    margin:0 -2px;
+    padding:0.5rem calc(1.25rem + 2px) 0.5rem 0;
+    z-index:999;
+}
+#years span[class]{
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
+}
+.table-wrap{
+    padding:0 0.75rem 1.5rem 0.75rem;
+}
+span {
+    font-weight: normal !important;
+}
+table{
+    border: 0;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 3rem;
+    position: relative;
+}
+table caption{
+    color:#356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
 }
