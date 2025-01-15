@@ -57,9 +57,6 @@ section{
 .table-wrap{
     padding:0 0.75rem 1.5rem 0.75rem;
 }
-span {
-    font-weight: normal !important;
-}
 table{
     border: 0;
     border-collapse: collapse;
@@ -71,4 +68,58 @@ table caption{
     color:#356eaf;
     font-size: 1.3em;
     font-weight: normal;
+    position: absolute;
+    top: -2.25rem;
+    left: 0.5rem;
+}
+tbody td{
+    width:100vw;
+    min-width:4rem;
+    max-width:4rem;
+}
+tbody th{
+    width:calc(100% - 12rem);
+}
+tr[class="total"]{
+    border-bottom:4px double #0a0a23;
+    font-weight:bold;
+}
+tr[class="total"] th{
+    padding:0.5rem 0 0.25rem 0.5rem;
+    text-align: left;
+}
+tr.total{
+    padding:0 0.25rem ;
+    text-align: right;
+}
+tr.total td:nth-of-type(3){
+    padding-right:0.5rem;
+}
+tr.total:hover {
+    background-color: #99c9ff;
+}
+td.current{
+    font-style: italic;
+}
+tr.data{
+    background:linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+tr.data th{
+    text-align:left;
+    padding:0.3rem 0 0 0.5rem;
+}
+tr.data th .description{
+    display:block;
+    font-style:italic;
+    padding:1rem 0 0.75rem;
+    margin-right:-13.5rem;
+    font-weight:normal;
+}
+tr.data td{
+    vertical-align: top;
+    text-align: right;
+    padding: 0.3rem 0.25rem 0;
+}
+tr.data td:last-of-type{
+    padding-right:0.5rem;
 }
